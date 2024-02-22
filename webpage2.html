@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .Main {
+            height: 100vh;
+            width: 100vw;
+            background-image: url("./assets/images/WhatsApp\ Image\ 2023-10-30\ at\ 8.40.40\ AM\ \(1\).jpeg");
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            height: 10vh;
+            width: 100vw;
+            align-items: center;
+            color: black;
+
+        }
+
+        .Menu {
+            list-style: none;
+
+
+        }
+
+        .Menu li {
+            display: inline-block;
+            margin-left: 20px;
+
+
+        }
+
+        .content {
+            /* border: 1px solid black; */
+            width: 60vw;
+            height: 20vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+
+
+
+        }
+
+        .content h3 {
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+            display: inline;
+            font-family: 'Times New Roman', Times, 'Segoe UI', Tahoma, Geneva, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .content button {
+            /* height: 1rem; */
+            width: 6rem;
+            background-color: orange;
+            border-radius: 37%;
+            padding: 10px;
+            display: inline;
+            border: none;
+
+        }
+
+        .Footer {
+            border: 1px solid black;
+            height: 10vh;
+            width: 80vw;
+            /* background-color: rgb(125, 42, 4); */
+            display: flex;
+
+        }
+
+        .Footer footer {
+            width: 80%;
+            background-color: orange;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: right;
+            align-items: right;
+            
+
+        }
+
+        .Avaibility {
+            background-color: rgb(40, 36, 77);
+            width: 20%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .Avaibility h4{
+            color: white;
+            
+
+            
+        }
+        
+        .Hotel{
+            margin: 25px;
+           
+            
+        }
+       
+        select{
+            background-color: transparent;
+            border: none;         
+        }
+             
+        option{
+            /* background-color: transparent; */
+            border: white;
+        }
+            
+        .myinput{
+            background-color: transparent;
+            border: 1px solid white;
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+
+    <div class="Main">
+        <nav>
+            <H1>REFF</H1>
+            <ul class="Menu">
+                <li class="dropdown">HOME</li>
+                <li>
+                    <select name="" id="">
+                        <option value=""> HOTEL</option>
+                        <option value=" ">TAG MAHAL</option>
+                        <option value="">GAURI IN </option>
+                        <option value="">OLX</option>
+                    </select>
+                </li>
+                <li>SERVICES</li>
+                <li>BLOG</li>
+                <li>CONTENT</li>
+                <li>LOGIN</li>
+            </ul>
+        </nav>
+        <div class="content">
+            <h3>DELUXE HOTEL</h3>
+            <H1>Make Your Vaction Comfortable </H1>
+            <button>Book Now</button>
+
+
+        </div>
+
+        <div class="Footer">
+            <footer>
+                <form class="Hotel">
+                    <select name="Select Hotel" id="Select Hotel">
+                        
+                        <option value="s">Taj Mahal</option>
+                        <option value="m">Maharaja Hotel</option>
+                        <option value="l">Lkshami Hotel</option>
+                        <option value="gauri">Gauri In Hotel</option>
+
+                    </select>
+
+                    <label for="CHECK IN"> check in </label>
+                    <input class="myinput" type="text" id="CHECK IN">
+
+                    <label for="CHECK OUT"> check out </label>
+                    <input class="myinput" type="text" id="CHECK OUT">
+                    
+                </form>
+            </footer>
+            <div class="Avaibility">
+                <h4>Check Avaibility</h4>
+
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+</body>
+
+</html>
